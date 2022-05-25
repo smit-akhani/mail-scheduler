@@ -73,3 +73,4 @@ end
 
 gem "pg"
 gem "sidekiq", "~> 6.4"
+gem "figaro"

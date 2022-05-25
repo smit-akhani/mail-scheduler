@@ -1,7 +1,11 @@
 <%= form_with model: @email, method: :post do |form| %>
+  <%= form.label :subject %>
   <%= form.text_field :subject %><br/>
+  <%= form.label :body %>
   <%= form.text_area :body %><br/>
-  <%= form.datetime_field :scheduled_at %><br/>
+  <%= form.label :scheduled_time %>
+  <%= form.datetime_field :scheduled_time %><br/>
+  <%= form.label :send_to %>
   <%= form.text_field :send_to %><br/>
   <%= form.submit %>
 <% end %>
