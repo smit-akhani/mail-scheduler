@@ -1,0 +1,7 @@
+<%= form_with model: @create, method: :post do |form| %>
+  <%= form.text_field :subject %><br/>
+  <%= form.text_area :body %><br/>
+  <%= form.datetime_field :scheduled_time %><br/>
+  <%= form.text_field :send_to %><br/>
+  <%= form.submit %>
+<% end %>
