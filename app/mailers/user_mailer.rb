@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-    default from: 'inneedweb@gmail.com'
+    default from: Figaro.env.sender_address
     
     def schedule_email(eml)
         @email = eml
